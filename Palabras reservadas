@@ -1,0 +1,15 @@
+
+
+|palabras reservadas                                          |
+--------------------------------------------------------------- 
+| break             || funct             || select            |
+| case              || go                || struct            |
+| chan              || goto              || switch            |
+| const             || if                || type              |
+| continue          || import            || var               |
+| default           || interface         ||                   |
+| defer             || map               ||                   |
+| else              || package           ||                   |
+| fallthrough       || range             ||                   |
+| for               || return            ||                   |
+---------------------------------------------------------------
