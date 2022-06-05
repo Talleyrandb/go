@@ -1,1 +1,102 @@
 Go soporta todos los tipos básicos que se esperan de un lenguaje estáticamente tipado:
+
+|tipo                                                           | literal              |
+----------------------------------------------------------------------------------------
+| booleano                                                      | true, false          |       
+| int, int8, uint8, int16, uint16, int32, uint32, int64, uint64 | 38                   |   
+| float64, float32  (números de punto flotante)                 | 23.5, 2e-12          |
+| byte (alias de uint8, un char)                                | 'b'                  |
+| runas  (alias de int32, un carácter unicode)                  | 'j'                  |
+| string                                                        | "foo", `bar`         |
+| constantes                                                    | const a = 8          |
+| Estructuras                                                   | type Foo struct {}   |
+| slice  (vector de tamaño variable)                            | []int = {1, -3, 4}   |
+| array (vector de tamaño fijo)                                 | [2]int = {2, -3}     |
+| map (conocido como diccionario o tabla hash en otros idiomas) | map[string]int       |
+| --------------------------------------------------------------------------------------
+
+BOLEANO 
+  true
+  false
+  
+ENTERO
+ 
+Go tiene enteros con y sin signo de tamaño fijo:
+
+  int8, uint8
+  byte es un alias de uint8
+  int16, uint16
+  int32, uint32
+  rune es un alias de int32
+  int64, uint64
+
+También tiene enteros dependientes de la arquitectura:
+
+    int es int32 en procesadores de 32 bits e int64 en procesadores de 64 bits
+    uint es uint32 en procesadores de 32 bits y uint64 en procesadores de 64 bits
+
+El valor cero de un entero es 0.
+
+NÚMEROS DE PUNTO FLOTANTE
+
+Go tiene números de punto flotante correspondientes al estándar IEEE 754:
+
+float32 es un número de punto flotante de 4 bytes (conocido como float en C)
+float64 es un número de punto flotante de 8 bytes (conocido como double en C)
+El valor cero de float32 y float64 es 0,0.
+
+CARACTERES Y RUNAS
+
+Go tiene 2 tipos de caracteres:
+
+byte es un valor de 1 byte, un alias para el tipo uint8
+rune es un punto de código Unicode de 4 bytes, un alias para el tipo int32
+El valor cero de un byte y una runa es 0.
+
+STRINGS
+
+Las cadenas de texto en Go son una secuencia inmutable de bytes (valores de bytes de 8 bits)
+
+Esto es diferente a lenguajes como Python, C#, Java o Swift donde las cadenas son Unicode.
+
+El valor cero de un tipo de cadena es una cadena vacía.
+
+CONSTANTES
+
+Go admite constantes de carácter, cadena, booleana y numérica.
+
+Go no proporciona enumeraciones.
+
+Puedes emular los enums usando constantes.
+
+ESTRUCTURAS
+
+A structure groups multiple values into a single entity.
+
+Zero value of struct is a struct whose fields are set to their respective zero values.
+
+SLICES
+
+Un slice en Go se usa donde se usaría un array en la mayoría de los otros lenguajes como 
+Ruby, Python o C# o std::vector en C++.
+
+Un slice puede crecer y reducirse en tamaño. Se implementa como una vista en un array de tamaño 
+fijo subyacente.
+
+El valor cero de un slice es nil.
+
+ARRAYS
+
+Los arrays en Go tienen un tamaño fijo. Como tal, se utilizan raramente.
+
+En la mayoría de los casos utilizamos rodajas que pueden crecer y reducir su tamaño.
+
+El valor cero de un array es un array con valores establecidos a su valor cero.
+
+MAPS
+
+Un mapa es un mapeo desordenado de una clave a un valor.
+
+Otros lenguajes los llaman diccionarios (Python) o tablas hash (C++).
+
+El valor cero de map es nil.
