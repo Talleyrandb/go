@@ -1,2 +1,14 @@
-¿que es go?
-Go, también conocido como Golang, es un lenguaje de programación de código abierto, compilado y de tipado estático diseñado por Google. Está construido para ser simple, de alto rendimiento, legible y eficiente.
+Go, también conocido como Golang es un lenguaje de programación compilado diseñado por Google, a diferencia de Python que es un lenguaje de programación interpretado. 
+La principal diferencia entre un lenguaje compilado y uno interpretado es que el lenguaje compilado requiere un paso adicional antes de ser ejecutado, la compilación, 
+que convierte el código que escribes a lenguaje de máquina. Un lenguaje interpretado, por otro lado, es convertido a lenguaje de máquina a medida que es ejecutado.
+
+Go es un lenguaje de programación de propósito general con las siguientes características:
+simple
+código abierto
+compilado
+sintaxis familiar como la de C 
+de tipado estático 
+soporte del lenguaje para la concurrencia 
+recolección de basura
+rápido, de alto rendimiento, legible y eficiente
+multiplataforma (compatible con Windows, Mac, Linux y otros, y con múltiples arquitecturas de CPU)
