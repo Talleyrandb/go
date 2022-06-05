@@ -1,0 +1,23 @@
+main.go
+
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, 世界")
+}
+
+Package main (Paquete principal)   
+Cuando construyas piezas de código reutilizables, desarrollarás un paquete como una biblioteca compartida. Pero cuando desarrolle programas ejecutables, utilizará el 
+paquete "main" para hacer el paquete como un programa ejecutable. El paquete "main" indica al compilador de Go que el paquete debe compilar como un programa ejecutable 
+en lugar de una biblioteca compartida. La función principal del paquete "main" será el punto de entrada de nuestro programa ejecutable. Cuando construyas bibliotecas 
+compartidas, no tendrás ningún paquete "main" ni función "main" en el paquete.
+
+Importar paquetes
+La palabra clave "import" se utiliza para importar un paquete a otros paquetes. En el Listado de Código -1, hemos importado el paquete "fmt" en el programa de ejemplo 
+para utilizar la función Println. El paquete "fmt" proviene de la biblioteca estándar de Go. Cuando se importan paquetes, el compilador Go buscará en las ubicaciones 
+especificadas por la variable de entorno GOROOT y GOPATH. Los paquetes de la biblioteca estándar están disponibles en la ubicación GOROOT. Los paquetes creados por usted, 
+y los paquetes de terceros que haya importado, están disponibles en la ubicación GOPATH.
+nota: go no permite importar paquetes que no se vallan a utilizar
+
